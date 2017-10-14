@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>My Paddle(space shoot) game</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <center>
+        <h1 id="header">Fall Not!</h2>
+
+            <h3 style="color: ghostwhite" id = "level">Level: 1</h3>
+          <p style="color: ghostwhite" id = "score">Score: 34</p>
+          <div id="myModal" class="modal">
+
+	  <!-- Modal content -->
+	  <div class="modal-content">
+	    <div class="modal-header">
+	      <span class="close">&times;</span>
+	      <center><h2 style="padding-top: 20px; font-family: 'Lithos Pro Regular'" id = "welcome">Welcome</h2></center>
+	    </div>
+	    <div class="modal-body">
+
+        <center>
+            <div class="dropdown">
+                <label style="font-family: 'Lithos Pro Regular'">Select Level: </label><button onclick="myFunction()" class="dropbtn" id="prompt">Level 1</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a onclick="levelSelected(1)" href="#home">Level 1</a>
+                    <a onclick="levelSelected(2)" href="#about">Level 2</a>
+                    <a onclick="levelSelected(3)" href="#contact">Level 3</a>
+                    <a onclick="levelSelected(4)" href="#home">Level 4</a>
+                    <a onclick="levelSelected(5)" href="#about">Level 5</a>
+                </div>
+            </div>
+            <br>
+        </center>
+        <button name="start" onClick = "closeModal()" id = "startButton">Start</button>
+    </div>
+    </div>
+
+    </div>
+
+    <canvas id="myCanvas" width="670" height="420"></canvas>
+    <center style="margin-top: 70px; color: ghostwhite; font-size : 10px;"><p>by Biruk Misganaw - ATR/2035/08</p></center>
+    <script src="javascript.js"></script>
+
+
+</body>
+
+</html>
